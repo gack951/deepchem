@@ -6,7 +6,7 @@ RUN apt-get update && \
     apt-get clean
 
 # Install miniconda
-RUN MINICONDA="Miniconda3-latest-Linux-x86_64.sh" && \
+RUN MINICONDA="Miniconda3-4.5.11-Linux-x86_64.sh" && \
     wget --quiet https://repo.continuum.io/miniconda/$MINICONDA && \
     bash $MINICONDA -b -p /miniconda && \
     rm -f $MINICONDA
